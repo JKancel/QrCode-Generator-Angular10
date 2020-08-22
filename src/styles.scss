@@ -58,10 +58,12 @@ textarea {
     max-width: 66.66667%;
   }
 }
+
+.pb-md-11, .py-md-11 {
+  padding-bottom: 6rem!important;
+}
+
 @media (min-width: 768px) {
-  .pb-md-11, .py-md-11 {
-    padding-bottom: 6rem!important;
-  }
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
