@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  height: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: DM Sans,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1b1642;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+app-root .bg-dark {
+  background-color: #413c69!important;
+}
+
+.bshadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #222222);
+  opacity: 1;
+}
+
+textarea {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  opacity: .5;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg {
+    max-width: 960px;
+  }
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+@media (min-width: 768px) {
+  .pb-md-11, .py-md-11 {
+    padding-bottom: 6rem!important;
+  }
+  .col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+}
+
+.border-multicolor {
+  border-width: 0;
+  border-top: 4px solid;
+  -o-border-image: linear-gradient(90deg,#575a7b,#575a7b 20%,#f9655b 0,#f9655b 40%,#f5c070 0,#f5c070 60%,#6658ea 0,#6658ea 80%,#fcc 0) 1;
+  border-image: linear-gradient(90deg,#575a7b,#575a7b 20%,#f9655b 0,#f9655b 40%,#f5c070 0,#f5c070 60%,#6658ea 0,#6658ea 80%,#fcc 0) 1;
+}
+
+.text-white-60 {
+  color: hsla(0,0%,100%,.6)!important;
+}
